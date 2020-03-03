@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas 2</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".k1").ready(function(){$("#box1").addClass("kotak")});
+			$(".k1").dblclick(function(){$("#box1").addClass("red");});
+			$(".k2").ready(function(){$("#box2").addClass("kotak")});
+			$(".k2").dblclick(function(){$("#box2").addClass("red");});
+			$(".k3").ready(function(){$("#box3").addClass("kotak")});
+			$(".k3").dblclick(function(){$("#box3").addClass("red");});
+			$(".k4").ready(function(){$("#box4").addClass("kotak")});
+			$(".k4").dblclick(function(){$("#box4").addClass("red");});
+		});
+	</script>
+	<style type="text/css">
+		.kotak { width: 100px; height: 100px; background-color:yellow; border: none;}
+		.red {background-color:red; border: none;}
+	</style>
+</head>
+<body>
+	<p>Klik 2X untuk membuat kotak berwarna merah</p>
+	<table>
+	<tr>
+		<td class="k1" id="box1"></td>
+		<td class="k2" id="box2"></td>
+		<td class="k3" id="box3"></td>
+		<td class="k4" id="box4"></td>
+	</table>
+</body>
+</html>
